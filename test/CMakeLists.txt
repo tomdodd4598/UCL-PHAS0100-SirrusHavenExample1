@@ -5,7 +5,7 @@ foreach(test ${Tests})
     add_executable(${test} main.cpp ${test_lower}.cpp)
     target_include_directories(${test} PUBLIC ${IncludeDir})
     target_include_directories(${test} PUBLIC ${TestDir})
-    target_link_libraries(${test} PUBLIC CricketLib)
+    target_link_libraries(${test} PUBLIC UnitsLib XenoLib)
 endforeach()
 
 #add_test(NAME Test1 COMMAND ${BinDir}/Test1)
